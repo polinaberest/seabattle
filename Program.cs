@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace game1
+namespace Game1
 {
     class Program
     {
@@ -44,15 +44,11 @@ namespace game1
                 ship.point.Y = int.Parse(Console.ReadLine()) - 1;
 
                 Console.WriteLine("direction\n1-bottom\n2-right");
-                ship.shipDirection = (Ship.ShipDirection)int.Parse(Console.ReadLine()) - 1;
+                ship.shipDirection = (Enums.ShipDirection)int.Parse(Console.ReadLine()) - 1;
 
                 scena.PlaceShip(ship);
                 scena.PrintScene();
             }
-         
-
-            
         }
-        
     }
 }

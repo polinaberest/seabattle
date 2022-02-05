@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace game1
+namespace Game1
 {
-    class FightShip : Ship
+    public class FightShip : Ship
     {
         int areaOfAccess = 4;
-        public FightShip(int size, int speed, Point point, ShipDirection direction) :base( size,  speed, point, direction)
+
+        public FightShip(int size, int speed, Point point, Enums.ShipDirection direction) :base( size,  speed, point, direction)
         {
             
         }
@@ -19,15 +20,14 @@ namespace game1
 
         }
 
-        public void Shoot() {
-            return;
+        public void Shoot()
+        {
+            Console.WriteLine("I shoot!");
         }
 
         public override string ToString()
         {
             return "FightShip " + speed + " " + ShipSize;
         }
-
-
     }
 }
